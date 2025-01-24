@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import React, { useState, useEffect } from "react";
+import "./App.css";
+import Shop1 from "./Shops/Shop1";
+import Shop2 from "./Shops/Shop2";
+import Cookie from "./Cookie/Cookie";
+import Counter from "./Counter/Counter";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  // Consts
+  // const [items, setItems] = useState([]);
+  // const [count, setCount] = useState(0);
 
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       const response = await fetch(
+  //         "https://cookie-upgrade-api.vercel.app/api/upgrades"
+  //       );
+  //       const data = await response.json();
+  //       console.log("Data Received");
+  //       setItems(data);
+  //     } catch (error) {
+  //       console.error("Data failed");
+  //     }
+  //   }
+  //   fetchData();
+  // }, []);
+
+  //   useEffect(()=>{
+  // {async function fetchData(){
+
+  //         const response = await fetch("https://cookie-upgrade-api.vercel.app/api/upgrades/");
+  //         const data = await response.json();
+  //         console.log("Data received");
+  //         setItems(data);
+  //       }
+  //     }fetchData()
+  //   },[refreshCount]);
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div id="MainDiv">
+      <div id="CounterDiv">
+        <Counter />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div id="Shops">
+        <Shop1 />
+        <Shop2 />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div id="MainCookie">
+        <Cookie />
+      </div>
+    </div>
+  );
 }
-
-export default App
