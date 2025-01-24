@@ -5,6 +5,20 @@
 
 #MainDiv {
   display: grid;
-  grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+  grid-template-columns: 3fr 6fr 3fr;
   grid-template-rows: 200px 1000px;
+}
+
+#MainCookie {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+}
+
+#CounterDiv {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-self: center;
+  align-items: center;
 }

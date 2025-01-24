@@ -39,7 +39,7 @@ export default function App() {
   return (
     <div id="MainDiv">
       <div id="CounterDiv">
-        <Counter />
+        <Counter counterValue="1" />
       </div>
       <div id="Shops">
         <Shop1 />

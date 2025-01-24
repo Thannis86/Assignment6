@@ -1,0 +1,7 @@
+#cookieImg {
+  display: flex;
+  aspect-ratio: 1 /1;
+  align-self: baseline;
+  width: 50%;
+  cursor: pointer;
+}
