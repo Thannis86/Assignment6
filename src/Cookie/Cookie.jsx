@@ -1,15 +1,17 @@
 import "./Cookie.css";
 
-export default function Cookie() {
+export default function Cookie(props) {
   function clicked() {
-    console.log("Clicked");
+    props.clicks;
   }
   return (
-    <img
-      src="./src/Cookie/Cookie.png"
-      alt="A basic chocolate chip cookie"
-      id="cookieImg"
-      onClick={clicked}
-    />
+    <>
+      <img
+        src="./src/Cookie/Cookie.png"
+        alt="A basic chocolate chip cookie"
+        id="cookieImg"
+        onClick={props.clicks}
+      />
+    </>
   );
 }
