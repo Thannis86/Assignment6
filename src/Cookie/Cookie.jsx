@@ -1,9 +1,6 @@
 import "./Cookie.css";
 
 export default function Cookie(props) {
-  function clicked() {
-    props.clicks;
-  }
   return (
     <>
       <img

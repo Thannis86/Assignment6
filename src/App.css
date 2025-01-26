@@ -16,16 +16,53 @@
   align-content: baseline;
 }
 
+#MainCookie:hover {
+  transform: scale(1.05);
+}
+
 #CounterDiv {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-self: center;
   align-items: center;
+  font-size: xxx-large;
 }
 
 #Shops {
   grid-area: 2 / 1 / 3 / 2;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-self: center;
+  align-self: baseline;
+}
+
+.Shops {
+  font-size: x-large;
+  width: 75%;
+  aspect-ratio: 1 / 0.5;
+  background-color: #f6e0b5;
+  border: 2px solid #a39193;
+}
+
+.Shops:hover {
+  transform: scale(1.05);
+}
+
+#saveSection {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.Saves:hover {
+  transform: scale(1.05);
+}
+
+.Saves {
+  font-size: x-large;
+  margin: 5%;
+  width: 75%;
+  aspect-ratio: 1 / 0.5;
+  background-color: #f6e0b5;
+  border: 2px solid #a39193;
 }
