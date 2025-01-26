@@ -13,3 +13,7 @@ The other big issue I had was with having multiple effects in a component click.
 For the save and load buttons, these were a lot simpler than i thought they would be and I basically just copied what I had done in my week 3 assignment, but simpler.
 
 After sorting all this out, getting everything looking nicer, hitting all the goals and stretch goals, I decided to create an array for the first shop to differentiate better the text between each of the shops. However, getting to 8pm on Sunday, I decided I had had enough of this for now and couldn't be bothered and just switched some of the text around.
+
+---
+
+I did draw my own cookie, upon rendering, it has not used that, so I've uploaded it to IMGUR and updated the paths, but I think it now has a white background, so please allow me those style points
